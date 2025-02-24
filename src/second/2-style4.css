@@ -38,6 +38,7 @@ article h3, article p, article ol {
 
 article ol{
     margin-top: 0;
+    margin-bottom: 0;
     padding-left: 3rem;
 }
 
