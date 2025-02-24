@@ -1,0 +1,89 @@
+body, header, footer, nav, ul, li, h1, h2, h3, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size:20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid fireBrick;
+}
+
+footer{
+    padding-top: 1rem;
+    border-top: 2px solid fireBrick;
+}
+
+aside a{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid fireBrick;
+    background-color: fireBrick;
+    text-decoration: none;
+    color: white;
+}
+
+h1,h2,h3,aside a{
+    text-transform: uppercase;
+}
+
+article h3, article p, article ol {
+    padding: 0.5rem 2rem;
+}
+
+article ol{
+    margin-top: 0;
+    padding-left: 3rem;
+}
+
+article{
+    margin: 0.5rem 0;
+    border-radius:2rem;
+    background-color: salmon;
+}
+
+h3{
+    color: white;
+}
+
+nav a{
+    color: fireBrick;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+img{
+    width: 250px;
+    border-radius: 2rem;
+    border: 2px solid firebrick;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: salmon;
+}
+
+aside a:hover{
+    background-color: white;
+    color: firebrick;
+}
+
+nav ul li a:active{
+    color: salmon;
+}
+
+nav ul li a:focus{
+    outline: 2px solid salmon;
+}
+
+nav ul li a:visited{
+    color: firebrick;
+}

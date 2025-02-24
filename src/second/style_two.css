@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Georgia, monospace;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+strong {
+    font-size: 2em;
+}
+
+em {
+    font-size: 2rem;
+}
+
+p {
+    text-indent: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+}
+
+h1 {
+    font-style: oblique;
+    font-family: monospace;
+}
+
+h3 {
+    font-weight: 900;
+    font-family: Arial, serif;
+}
+
+h6 {
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, h5::first-letter, h6::first-letter {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+}
