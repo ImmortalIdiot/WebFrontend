@@ -2,20 +2,22 @@
 // 5 2 '0101'
 // 240, 8 '00000360'
 
-function fromDecimal(number, base) {
-    const stringNumber = number.toString(base)
-
-    let power = 1
-
-    while (base ** power < stringNumber.length) {
-        power++
-    }
-
-    const length = base ** power
-    return stringNumber.padStart(length, '0');
+function log(num, base) {
+    return Math.log(num) / Math.log(base);
 }
 
-const number = 240
-const base = 8
+function fromDecimal(number, base) {
+    let minLength = Number.parseInt(Math.ceil(log(number, base)));
+    let v = Math.ceil(log(minLength, base))
+
+    const stringNumber = number.toString(base)
+
+    return '0'.repeat(base ** v - stringNumber.length) + stringNumber;
+}
+
+const number = 150
+const base = 16
+
+// 15 -> 16
 
 console.log(fromDecimal(number, base))
