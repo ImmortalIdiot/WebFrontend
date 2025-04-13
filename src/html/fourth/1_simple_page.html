@@ -10,37 +10,32 @@
         body {
             margin: 0;
             display: flex;
-            height: 100vh;
             flex-direction: column;
+            height: 100vh;
         }
 
-        header, footer {
-            padding: 10px;
-            text-transform: uppercase;
+        header, main, aside, footer {
             margin: 10px;
+            padding: 10px;
             box-shadow: 5px 5px 10px firebrick;
         }
 
-        main, aside {
-            padding: 10px;
-            text-transform: uppercase;
-            box-shadow: 5px 5px 10px firebrick;
+        section {
+            display: flex;
+            flex: 1;
         }
 
         main {
-            flex-grow: 3;
-            margin-right: 10px;
-        }
-
-        aside {
-            flex-grow: 1;
+            flex: 1;
         }
     </style>
 </head>
 <body>
-<header>Header</header>
-<main>Main</main>
-<aside>Aside</aside>
-<footer>Footer</footer>
+<header>HEADER</header>
+<section>
+    <main>MAIN</main>
+    <aside>ASIDE</aside>
+</section>
+<footer>FOOTER</footer>
 </body>
 </html>

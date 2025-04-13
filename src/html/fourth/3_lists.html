@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vereshchagin, Krasulya">
+    <title>Styled lists page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #unordered ul,
+        #ordered ol {
+            display: flex;
+            width: 800px;
+            border: 5px solid firebrick;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        #unordered ul li,
+        #ordered ol li {
+            border: 5px dashed salmon;
+            padding: 20px;
+        }
+
+        #ordered ol {
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+
+        #unordered ul li:first-child,
+        #ordered ol li:first-child {
+            flex-grow: 1;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+<section id="unordered">
+    <h2>Технологии для веб-разработки</h2>
+    <ul>
+        <li>HTML (HyperText Markup Language)</li>
+        <li>CSS (Cascading Style Sheets) или их модификации SCSS, SASS, Post CSS, Less</li>
+        <li>JavaScript (или его аналог TypeScript) и связанные с ним фреймворки — React.js, Angular и Vue.js)</li>
+        <li>PHP, Java, Python, Go, C#, Node.js и даже Ruby</li>
+        <li>npm, yarm (менеджеры пакетов), git (системы контроля версий) и многие другие</li>
+    </ul>
+</section>
+
+<section id="ordered">
+    <h2>История появления технологий веб-разработки</h2>
+    <ol>
+        <li>1991 - HTML</li>
+        <li>1995 - JavaScript</li>
+        <li>1996 - CSS</li>
+        <li>2005 - GIT</li>
+        <li>2009 - Node.js</li>
+        <li>2012 - TypeScript</li>
+        <li>2013 - React</li>
+        <li>2014 - Vue.js</li>
+        <li>2016 - Angular</li>
+    </ol>
+</section>
+</body>
+</html>
