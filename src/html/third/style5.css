@@ -1,0 +1,32 @@
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #191970;
+}
+
+th, tr:last-child {
+    background-color: #191970;
+    color: white;
+    text-transform: uppercase;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #4169E1;
+}
+
+tr:hover:not(:first-child):not(:last-child) {
+    background-color: #191970;
+    color: white;
+}

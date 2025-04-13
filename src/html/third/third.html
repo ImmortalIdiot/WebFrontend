@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vereshchagin, Krasulya">
+    <title>Styled lists page</title>
+    <style>
+        section:not(#unordered) {
+            display: none;
+        }
+
+        #unordered ul {
+            list-style: none;
+            padding: 0;
+            border: 5px solid firebrick;
+            width: 500px;
+        }
+
+        #unordered ul li {
+            border: 5px dashed salmon;
+            width: 100%;
+            padding: 25px 50px;
+            box-sizing: border-box;
+            margin-bottom: -5px;
+        }
+
+        #unordered ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        #unordered h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<section id="unordered">
+    <h2>Технологии для веб-разработки</h2>
+    <ul>
+        <li>HTML (HyperText Markup Language)</li>
+        <li>CSS (Cascading Style Sheets) или их модификации SCSS, SASS, Post CSS, Less</li>
+        <li>JavaScript (или его аналог TypeScript) и связанные с ним фреймворки — React.js, Angular и Vue.js)</li>
+        <li>PHP, Java, Python, Go, C#, Node.js и даже Ruby</li>
+        <li>npm, yarm (менеджеры пакетов), git (системы контроля версий) и многие другие</li>
+    </ul>
+</section>
+</body>
+</html>

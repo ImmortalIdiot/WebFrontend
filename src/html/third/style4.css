@@ -1,0 +1,84 @@
+body, header, footer, nav, ul, li, h1, h2, h3, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size:20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid FireBrick;
+}
+
+footer{
+    padding-top: 1rem;
+    border-top: 2px solid FireBrick;
+}
+
+aside a{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid FireBrick;
+    background-color: FireBrick;
+    text-decoration: none;
+    color: white;
+}
+
+h1,h2,h3,aside a{
+    text-transform: uppercase;
+}
+
+article h3, article p, article ol{
+    padding: 0.5rem 2rem;
+}
+
+article ol{
+    padding-left: 3rem;
+}
+
+article{
+    margin: 0.5rem 0;
+    border-radius:2rem;
+    background-color: Salmon;
+}
+
+h3{
+    color: white;
+}
+
+nav a{
+    color: FireBrick;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+img{
+    width: 250px;
+    border-radius: 2rem;
+    border: 2px solid FireBrick;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: Salmon;
+}
+
+aside a:hover{
+    background-color: white;
+    color: FireBrick;
+}
+
+nav ul li a:active{
+    color: Salmon;
+}
+
+nav ul li a:focus{
+    outline: 2px solid Salmon;
+}

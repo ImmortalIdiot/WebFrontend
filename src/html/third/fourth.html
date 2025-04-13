@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vereshchagin, Krasulya">
+    <title>Colored article page</title>
+    <style>
+        body, header, footer, nav, ul, li, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            width: 500px;
+        }
+
+        body {
+            font-size: 20px;
+            padding: 0 2rem;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1rem 0;
+            border-bottom: 2px solid FireBrick;
+            display: table;
+            width: 100%;
+        }
+
+        .header-container {
+            display: table-row;
+        }
+
+        .header-container h1,
+        .header-container nav {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        header h1 {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 1.5rem;
+        }
+
+        article {
+            margin: 2rem 0;
+            padding: 0;
+            background-color: Salmon;
+            border-radius: 2rem;
+            overflow: hidden;
+        }
+
+        article img {
+            width: 250px;
+            border-radius: 2rem;
+            border: 2px solid FireBrick;
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+
+        article h3 {
+            color: white;
+            padding: 0.5rem 2rem;
+            margin-top: 0;
+        }
+
+        article p, article ol {
+            padding: 0.5rem 2rem;
+            margin-top: 0;
+        }
+
+        article ol {
+            padding-left: 3rem;
+        }
+
+        article::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        aside {
+            position: fixed;
+            right: 1rem;
+            bottom: 2rem;
+        }
+
+        aside a {
+            padding: 1rem;
+            border-radius: 2rem;
+            border: 2px solid FireBrick;
+            background-color: FireBrick;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        footer {
+            padding: 1rem 0;
+            border-top: 2px solid FireBrick;
+            margin-top: 2rem;
+        }
+
+        h1, h2, h3, aside a {
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: FireBrick;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: Salmon;
+        }
+
+        aside a:hover {
+            background-color: white;
+            color: FireBrick;
+        }
+
+        nav ul li a:active {
+            color: Salmon;
+        }
+
+
+        nav ul li a:focus {
+            outline: 2px solid Salmon;
+        }
+    </style>
+</head>
+<body>
+<header id="top">
+    <div class="header-container">
+        <h1>Programming language of the Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#language-1">HTML</a></li>
+                <li><a href="#language-2">CSS</a></li>
+                <li><a href="#language-3">JavaScript</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <article id="language-1">
+        <img src="cat-red.jpg" alt="Cat to HTML"/>
+        <h3>HTML to define the content of web pages</h3>
+        <p>Hyper Text Markup Language (HTML) is the standard markup language for creating Web pages. HTML elements tell the browser how to display the content. They mark pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+        <p>HTML5 Semantic Tags: article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time.</p>
+        <div style="clear: both;"></div>
+    </article>
+    <article id="language-2">
+        <img src="cat-brown.jpg" alt="Cat to CSS"/>
+        <h3>CSS to specify the layout of web pages</h3>
+        <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage. CSS can be added to HTML documents in 3 ways:</p>
+        <ol type="1">
+            <li>Inline - by using the style attribute inside HTML elements.</li>
+            <li>Internal - by using a "style" element in the "head" section.</li>
+            <li>External - by using a "link" element to link to an external CSS file.</li>
+        </ol>
+    </article>
+    <article id="language-3">
+        <img src="cat-blue.jpg" alt="Cat to JavaScript"/>
+        <h3>JavaScript to program the behavior of web pages</h3>
+        <p>It can update and change both HTML and CSS. It can calculate, manipulate and validate data.</p>
+    </article>
+</main>
+<aside>
+    <a href="#top">up</a>
+</aside>
+<footer>
+    <address>
+        Author John Doe - Email: <a href="info@example.com">info@example.com</a>
+    </address>
+</footer>
+</body>
+</html>

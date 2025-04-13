@@ -1,0 +1,59 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Georgia, monospace;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+strong {
+    font-size: 2em;
+    float: right;
+}
+
+em {
+    font-size: 2rem;
+    float: left;
+}
+
+p {
+    text-indent: 2em;
+    border: 1px solid #eee;
+    padding: 10px;
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+}
+
+h1 {
+    font-style: oblique;
+    font-family: monospace;
+}
+
+h3 {
+    font-weight: 900;
+    font-family: Arial;
+}
+
+h6 {
+    letter-spacing: 2px;
+    font-family: Georgi;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+}
+
+section:first-of-type {
+    display: none;
+}
+
+strong, em {
+    background-color: #eee;
+    padding: 2px 5px;
+}

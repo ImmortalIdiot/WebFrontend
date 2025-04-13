@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vereshchagin, Krasulya">
+    <title>Flexbox Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        header, footer {
+            padding: 10px;
+            text-transform: uppercase;
+            margin: 10px;
+            box-shadow: 5px 5px 10px firebrick;
+        }
+
+        main, aside {
+            padding: 10px;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 10px firebrick;
+        }
+
+        main {
+            flex-grow: 3;
+            margin-right: 10px;
+        }
+
+        aside {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+<header>Header</header>
+<main>Main</main>
+<aside>Aside</aside>
+<footer>Footer</footer>
+</body>
+</html>
